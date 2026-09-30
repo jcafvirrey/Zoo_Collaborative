@@ -27,12 +27,14 @@ public class Main {
         // --- LINE 1 ---
 
 
+Tiger tiger = new Tiger("Vitaly");
+zoo.add(tiger);
         // --- LINE 2 ---
-
-
+        Animal hipopotamo = new Hippo("Jose");
+        zoo.add(hipopotamo);
         // --- LINE 3 ---
-
-
+        Animal cat = new Cat("Gatete miau");
+        zoo.add(cat);
         // --- LINE 4 ---
         Animal Lion = new Lion("Lion") ;
         zoo.add(Lion);
@@ -40,17 +42,18 @@ public class Main {
         Dog dog = new Dog("Doggi"); zoo.add(dog);
 
         // --- LINE 6 ---
-
-
+        Animal wolf = new Wolf("Wolf");
+zoo.add(wolf);
         // --- LINE 7 ---
-
-
+        Animal cheetah = new Cheetah("cheetah");
+        zoo.add(cheetah);
         // --- LINE 8 ---
         Monkey monito =new Monkey("El Rey");
         zoo.add(monito);
 
         // --- LINE 9 ---
-
+        Animal crocodile = new Crocodrile ("Crocodile");
+        zoo.add(crocodile);
 
         // --- LINE 10 ---
 
