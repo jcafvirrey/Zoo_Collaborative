@@ -7,7 +7,7 @@ package com.virreymorcillo.zoo.model;
  * in a new file within this same package (com.virreymorcillo.zoo.model).
  */
 public abstract class Animal {
-
+    //Manuel Sánchez Díaz - Comentario
     protected String name;
 
     public Animal(String name) {
