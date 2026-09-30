@@ -17,7 +17,7 @@ public class Monkey extends Animal implements Pet {
     @Override
     public void makeSound() {
         try {
-            InputStream audioSrc = getClass().getResourceAsStream("sonidoMono.mp3");
+            InputStream audioSrc = getClass().getResourceAsStream("audioMono.mp3");
 
             if (audioSrc == null) {
                 System.out.println("No se encontró el archivo de sonido: sonidoMono.wav");

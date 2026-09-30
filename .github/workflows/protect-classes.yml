@@ -1,0 +1,25 @@
+name: Protect classes base
+
+on: pull_request
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check does not modify protected classes
+        run: |
+          CHANGES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD -- \
+            src/com/virreymorcillo/zoo/model/Animal.java \
+            src/com/virreymorcillo/zoo/model/Pet.java \
+            .github/CODEOWNERS \
+            .github/workflows/)
+          if [ -n "$CH%ANGES" ]; then
+            echo "::error::This pull-request modify protected files:"
+            echo "$CHANGES"
+            exit 1
+          fi
+          echo "Correct: It did not protected files"
