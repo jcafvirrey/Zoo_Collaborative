@@ -7,8 +7,8 @@ package com.virreymorcillo.zoo.model;
  * in a new file within this same package (com.virreymorcillo.zoo.model).
  */
 public abstract class Animal {
-
-    String name;
+    //Manuel Sánchez Díaz
+    protected String name;
 
     public Animal(String name) {
         this.name = name;
